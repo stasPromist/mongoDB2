@@ -1,0 +1,53 @@
+<%- include('./header')-%>
+<link rel="stylesheet" href="/CSS/style.css">
+<body>
+    <div class="container">
+        <div class="row">
+  <div class="col-12 mt-3">
+    <h1 class="display-3">Contact</h1>
+    <p></p>
+  </div>
+</div>
+ 
+<div class="row">
+  <div class="col-lg-6">
+    <form id="contact-form" action="" method="get" novalidate="novalidate" autocomplete="on">
+      <div class="form-group">
+        <label for="title">title:</label>
+        <input type="text" name="title" id="title" class="form-control">
+      </div>
+       <div class="form-group">
+        <label for="isbn">isbn:</label>
+        <input type="text" name="isbn" id="isbn" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="pageCount">page Count:</label>
+        <input type="number" name="pageCount" id="pageCount" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="publishedDate">published Date</label>
+        <input type="date" name="publishedDate" id="publishedDate" class="form-control">
+      </div>
+       <div class="form-group">
+        <label for="thumbnailUrl">thumbnail Url</label>
+        <input type="text" name="thumbnailUrl" id="thumbnailUrl" class="form-control">
+      </div>
+         <div class="form-group">
+        <label for="status">status</label>
+        <input type="text" name="status" id="status" class="form-control">
+      </div>
+        <div class="form-group">
+        <label for="status">authors</label>
+        <input type="text" name="authors" id="authors" class="form-control">
+      </div>
+         <div class="form-group">
+        <label for="status">categories</label>
+        <input type="text" name="categories" id="categories" class="form-control">
+      </div>
+      <button type="submit" name="submit" value="Contact Me" class="btn btn-primary">Contact Me!</button>
+    </form>
+  </div>
+</div>
+    </div>
+<%- include('./script')-%>
+ 

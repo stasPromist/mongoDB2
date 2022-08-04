@@ -1,0 +1,54 @@
+<%- include('./header')-%>
+  <div style="font-size: 10px;" class="container">
+    <table class="table table-striped">
+      <thead>
+
+        <tr>
+
+          <th scope="col">title</th>
+          <th scope="col">isbn</th>
+          <th scope="col">pageCount</th>
+          <th scope="col">publishedDate</th>
+          <th scope="col">thumbnailUrl</th>
+          <th scope="col">status</th>
+          <th scope="col">authors</th>
+          <th scope="col">categories</th>
+
+        </tr>
+
+      </thead>
+      <tr>
+        <% Book.forEach(book=> {%>
+          <td>
+            <%= book.title %>
+          </td>
+          <td>
+            <%= book.isbn %>
+          </td>
+          <td>
+            <%= book.pageCount %>
+          </td>
+          <td>
+            <%= book.publishedDate %>
+          </td>
+          <td>
+            <%= book.thumbnailUrl %>
+          </td>
+          <td>
+            <%= book.status %>
+          </td>
+          <td>
+            <%= book.authors %>
+          </td>
+          <td>
+            <%= book.categories %>
+          </td>
+      <tr>
+        <%});%>
+      </tr>
+
+    </table>
+
+  </div>
+
+  <%- include('./script')-%>
